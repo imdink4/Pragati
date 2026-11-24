@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRAGATI 2027 | Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">T</span> PRAGATI <span>2027</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="events.html">Events</a><a href="schedule.html">Schedule</a><a class="active" href="register.html">Register</a><a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main class="page-wrap">
+    <section class="page-hero"><p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p><h1>Save your<br><span>spot.</span></h1><p>Fill in the form below to register your interest in PRAGATI 2027.</p></section>
+    <section class="section form-section">
+      <form action="#" method="get">
+        <div class="form-heading"><p class="eyebrow">PARTICIPANT DETAILS</p><h2>Registration form</h2><p class="muted">Fields marked with * are required. This is a front-end demonstration form; it does not submit data to a server.</p></div>
+        <div class="form-grid">
+          <label>Full name *<input type="text" name="fullName" placeholder="Enter your full name" minlength="2" required></label>
+          <label>Email address *<input type="email" name="email" placeholder="you@example.com" required></label>
+          <label>Phone number *<input type="tel" name="phone" placeholder="10-digit mobile number" pattern="[6-9][0-9]{9}" title="Enter a valid 10-digit Indian mobile number" required></label>
+          <label>Department *<select name="department" required><option value="">Select department</option><option>Computer Science</option><option>Electronics</option><option>Mechanical</option><option>Electrical</option><option>Management</option><option>Other</option></select></label>
+          <label>Year of study *<select name="year" required><option value="">Select year</option><option>1st Year</option><option>2nd Year</option><option>3rd Year</option><option>4th Year</option></select></label>
+          <label>Registration category *<select name="category" required><option value="">Choose category</option><option>Student</option><option>Team</option><option>Guest</option></select></label>
+        </div>
+        <fieldset><legend>Gender *</legend><div class="choice-row"><label><input type="radio" name="gender" value="Male" required> Male</label><label><input type="radio" name="gender" value="Female"> Female</label><label><input type="radio" name="gender" value="Prefer not to say"> Prefer not to say</label></div></fieldset>
+        <fieldset><legend>Event preferences * (select at least one)</legend><div class="choice-grid">
+          <label><input type="checkbox" name="events" value="CodeSprint"> CodeSprint</label>
+          <label><input type="checkbox" name="events" value="RoboRace"> RoboRace</label>
+          <label><input type="checkbox" name="events" value="Web Design Challenge"> Web Design Challenge</label>
+          <label><input type="checkbox" name="events" value="Battle of Bands"> Battle of Bands</label>
+          <label><input type="checkbox" name="events" value="Gaming Championship"> Gaming Championship</label>
+        </div></fieldset>
+        <label class="full-label">Anything you would like us to know?<textarea name="message" rows="5" placeholder="Write your message here..."></textarea></label>
+        <label class="terms"><input type="checkbox" name="terms" required> I confirm that the information provided is correct. *</label>
+        <button class="button submit-button" type="submit">Submit registration</button>
+      </form>
+    </section>
+  </main>
+  <footer><a class="brand" href="index.html"><span class="brand-mark">T</span> PRAGATI <span>2027</span></a><p>© 2027 PRAGATI. Made for curious minds.</p></footer>
+</body>
+</html>
